@@ -27,7 +27,7 @@ url = f"https://api.openweathermap.org/data/2.5/weather?q=Sao%20Paulo,BR&units=m
     description='Pipeline ETL - Clima SP',
     schedule='0 */1 * * *',
     start_date=datetime(2026, 2, 11),
-    catchup=False,
+    catchup=True,
     tags=['weather', 'etl']
 )
 

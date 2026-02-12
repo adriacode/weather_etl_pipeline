@@ -96,5 +96,13 @@ def data_transformations():
     df = drop_columns(df, columns_names_to_drop)
     df = rename_columns(df, columns_names_to_rename)
     df = normalize_datetime_columns(df, columns_to_normalize_datetime)
+
+    
+    # Tratamento da chuva (rain.1h)
+    if 'rain.1h' in df.columns:
+        df = df.rename(columns={'rain.1h': 'rain_1h'})
+    else:
+        df['rain_1h'] = 0
+        
     logging.info("✓  Transformações concluídas\n")
     return df
