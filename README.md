@@ -40,7 +40,7 @@ This project simulates a production-ready data engineering workflow:
 This project consumes real-time weather data from the OpenWeather API:
 
 - API Documentation: https://openweathermap.org/current
-- Endpoint used: https://api.openweathermap.org/data/2.5/weathe
+- Endpoint used: https://api.openweathermap.org/data/2.5/weather
 
 ## 📂 Project Structure
 
@@ -97,20 +97,17 @@ Enable DAG:
 
     weather_pipeline
 
-------------------------------------------------------------------------
-
 ## 📊 Example Output Columns
 
-  Column                Description
-  --------------------- ---------------------------
-  temp                  Current temperature
-  humidity              Air humidity
-  wind_speed            Wind speed
-  weather_main          Weather category
-  weather_description   Detailed condition
-  datetime              Data extraction timestamp
+| Column              | Description                 |
+|---------------------|-----------------------------|
+| temp                | Current temperature         |
+| humidity            | Air humidity                |
+| wind_speed          | Wind speed                  |
+| weather_main        | Weather category            |
+| weather_description | Detailed condition          |
+| datetime            | Data extraction timestamp   |
 
-------------------------------------------------------------------------
 
 ## 🎯 Learning Goals
 
@@ -127,8 +124,6 @@ This project demonstrates:
 
 ## 🔮 Future Improvements
 
--   Add data quality validation
--   Implement incremental loads
 -   Store historical weather data
 -   Deploy to cloud environment (GCP)
 -   Add monitoring and alerts
