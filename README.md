@@ -21,13 +21,9 @@ This project simulates a production-ready data engineering workflow:
 
 ## 🏗 Architecture
 
-OpenWeather API\
-⬇\
-Airflow (ETL Orchestration)\
-⬇\
-Pandas Transformations\
-⬇\
-PostgreSQL Database
+<p align="center">
+  <img src="docs/architecture.png" width="800"/>
+</p>
 
 ------------------------------------------------------------------------
 
@@ -48,19 +44,12 @@ PostgreSQL Database
     weather_data_pipeline/
     │
     ├── dags/
-    │   └── weather_dag.py
-    │
     ├── src/
-    │   ├── extract_data.py
-    │   ├── transform_data.py
-    │   └── load_data.py
-    │
     ├── data/
     ├── config/
-    │   └── .env
-    │
+    ├── docs/
+    │   └── architecture.png
     ├── docker-compose.yaml
-    ├── pyproject.toml
     └── README.md
 
 ------------------------------------------------------------------------
@@ -138,11 +127,12 @@ This project demonstrates:
 -   Add data quality validation
 -   Implement incremental loads
 -   Store historical weather data
--   Deploy to cloud environment (GCP)
+-   Deploy to cloud environment (GCP / AWS)
 -   Add monitoring and alerts
 
 ------------------------------------------------------------------------
 
 ## 👩‍💻 Author
 
-Adria Freitas
+Adria Freitas\
+Data Engineering \| Python \| SQL \| Airflow \| Cloud
