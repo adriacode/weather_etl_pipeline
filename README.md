@@ -17,8 +17,6 @@ This project simulates a production-ready data engineering workflow:
 -   Orchestrate tasks using Airflow DAG
 -   Containerized environment with Docker
 
-------------------------------------------------------------------------
-
 ## 🏗 Architecture
 
 <p align="center">
@@ -37,7 +35,12 @@ This project simulates a production-ready data engineering workflow:
 -   python-dotenv
 -   uv (Python package manager)
 
-------------------------------------------------------------------------
+## 🔗 Data Source
+
+This project consumes real-time weather data from the OpenWeather API:
+
+- API Documentation: https://openweathermap.org/current
+- Endpoint used: https://api.openweathermap.org/data/2.5/weathe
 
 ## 📂 Project Structure
 

@@ -27,6 +27,7 @@ logs/
 airflow.db
 airflow-webserver.pid
 *.log
+config/airflow.cfg
 
 # Airflow temp files
 data/temp_data.parquet
