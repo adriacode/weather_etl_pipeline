@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 env_path = Path(__file__).resolve().parent.parent / 'config' /'.env'
 load_dotenv(env_path)
 
-API_KEY = os.getenv('api_key')
+API_KEY = os.getenv("API_KEY")
 url = f"https://api.openweathermap.org/data/2.5/weather?q=Sao%20Paulo,BR&units=metric&appid={API_KEY}"
 
 @dag(
@@ -26,7 +26,7 @@ url = f"https://api.openweathermap.org/data/2.5/weather?q=Sao%20Paulo,BR&units=m
     },
     description='Pipeline ETL - Clima SP',
     schedule='0 */1 * * *',
-    start_date=datetime(2026, 2, 7),
+    start_date=datetime(2026, 2, 11),
     catchup=False,
     tags=['weather', 'etl']
 )

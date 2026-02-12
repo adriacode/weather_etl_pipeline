@@ -15,7 +15,7 @@
 # env_path = Path(__file__).resolve().parent.parent / 'config' / '.env'
 # load_dotenv(env_path)
 
-# API_KEY  = os.getenv('api_key')
+# API_KEY = os.getenv("API_KEY")
 # url = f"https://api.openweathermap.org/data/2.5/weather?q=Sao%20Paulo,BR&units=metric&appid={API_KEY}"
 
 # table_name = 'sp_weather'
