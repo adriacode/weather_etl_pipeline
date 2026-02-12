@@ -127,12 +127,11 @@ This project demonstrates:
 -   Add data quality validation
 -   Implement incremental loads
 -   Store historical weather data
--   Deploy to cloud environment (GCP / AWS)
+-   Deploy to cloud environment (GCP)
 -   Add monitoring and alerts
 
 ------------------------------------------------------------------------
 
 ## 👩‍💻 Author
 
-Adria Freitas\
-Data Engineering \| Python \| SQL \| Airflow \| Cloud
+Adria Freitas
